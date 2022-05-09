@@ -1,7 +1,7 @@
 let weather = {
-    "apiKey": "53b2139e892a02acd2c488826f58d1cb",
+    "apiKey": "4e999e8610ab790336a9f9e011c5460b",
     fetchWeather: function (city) {
-        fetch("https://api.openweathermap.org/data/2.5/weather?q=" 
+        fetch("http://api.openweathermap.org/data/2.5/weather?q=" 
         + city 
         +"&units=imperial&appid=" 
         + this.apiKey
@@ -25,7 +25,7 @@ let weather = {
     }
 }
 
-document.querySelector(".search button").addEventListener("click", function () {
+document.querySelector(".button").addEventListener("click", function () {
     weather.search();
 });
 
